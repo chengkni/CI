@@ -35,8 +35,8 @@ jobs:
           echo Add other actions to build,
           echo test, and deploy your project.
           free -h 
-          echo ${{ github.email }}
-          echo ${{ github.username }}
+          echo ${{ github.event.repository.owner.login }}
+          echo ${{ github.event.repository.owner.display_login }}
           pwd 
           df -h
           
